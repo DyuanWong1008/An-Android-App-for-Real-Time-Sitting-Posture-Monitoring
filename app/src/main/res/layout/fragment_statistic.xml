@@ -1,0 +1,320 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/light_gray"
+    tools:context=".ui.statistic.StatisticFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="0dp">
+
+                <!-- Today Section -->
+            <TextView
+                android:id="@+id/tvToday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginRight="16dp"
+                android:text="@string/today"
+                android:textColor="#666768"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/tvMonitorTimeLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:text="@string/monitor_time_label"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tvMonitorTimeValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text="@string/monitor_time"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tvPostureScoreLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvMonitorTimeLabel"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/posture_score_label"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tvPostureScoreValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvMonitorTimeValue"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/posture_score"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tvGoodPostureDetectedLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvPostureScoreLabel"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/good_posture_detected_label"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/tvGoodPostureDetectedValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvPostureScoreValue"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/good_posture_detected"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/tvBadPostureDetectedLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvGoodPostureDetectedLabel"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/bad_posture_detected_label"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/tvBadPostureDetected"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvGoodPostureDetectedValue"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/bad_posture_detected"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/tvForwardHeadResultLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvBadPostureDetectedLabel"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/forwardhead_label"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/tvForwardHeadResult"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvBadPostureDetected"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/forwardhead_result"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/tvCrossLegResultLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvForwardHeadResultLabel"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/crossleg_label"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/tvCrossLegResult"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvForwardHeadResult"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/crossleg_result"
+                        android:textColor="@android:color/black" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- Date Range Selection -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/from"
+                    android:textColor="#666768"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/datePickerFrom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:hint="Select Date"
+                    android:inputType="none"
+                    android:textColor="#666768"
+                    android:textColorHint="#666768"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="16dp"
+                    android:text="@string/to"
+                    android:textColor="#666768"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/datePickerTo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:hint="Select Date"
+                    android:inputType="none"
+                    android:textColor="#666768"
+                    android:textColorHint="#666768"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+            <!-- Charts Time Monitoring-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="@string/chart_time_monitoring"
+                android:textColor="#666768"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="16dp">
+
+                    <com.github.mikephil.charting.charts.LineChart
+                        android:id="@+id/chartTimeMonitoring"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- Charts Posture Score-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginRight="16dp"
+                android:text="@string/chart_average_posture_score"
+                android:textColor="#666768"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="16dp">
+
+                    <com.github.mikephil.charting.charts.BarChart
+                        android:id="@+id/chartPostureScore"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- Charts Bad Posture Detected-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginRight="16dp"
+                android:text="@string/chart_bad_posture_detected"
+                android:textColor="#666768"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="16dp">
+
+                    <com.github.mikephil.charting.charts.BarChart
+                        android:id="@+id/chartBadPosture"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="50dp"
+                        android:paddingBottom="50dp"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,121 @@
+<resources>
+    <string name="app_name">Posture Guard</string>
+    <string name="title_home">Home</string>
+    <string name="title_statistic">Statistic</string>
+    <string name="title_profile">Profile</string>
+
+    <!-- Home Page  -->
+    <string name="tfe_pe_request_permission">This app needs camera permission.</string>
+    <string name="tfe_pe_tv_fps">FPS: %d</string>
+    <string name="tfe_pe_tv_score">Score: %.2f</string>
+    <string name="tfe_pe_tv_debug">DEBUG: %s</string>
+    <string-array name="tfe_pe_device_name">
+        <item>CPU</item>
+        <item>GPU</item>
+        <item>NNAPI</item>
+    </string-array>
+    <string-array name="tfe_pe_camera_name">
+        <item>Back</item>
+        <item>Front</item>
+    </string-array>
+    <string name="start_monitoring">Start</string>
+    <string name="pause_monitoring">Pause</string>
+    <string name="continue_monitoring">Continue</string>
+    <string name="time_format" formatted="false">Time: %02d:%02d</string>
+    <string name="data_saved_successfully">Data saved successfully!</string>
+    <string name="please_correct_posture">Please correct your posture!</string>
+    <string name="confirmation">Confirmation</string>
+    <string name="are_you_sure">Are you sure?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="reset">Reset</string>
+    <string name="start_pause">Start/Pause</string>
+    <string name="save">Save</string>
+    <string name="time">Time: 00:00</string>
+    <string name="device">Device:</string>
+    <string name="camera">Camera:</string>
+    <string name="word_reminder">Word Reminder</string>
+
+    <!-- Statistic Page  -->
+    <string name="today">Today</string>
+    <string name="monitor_time_label">Monitor Time:</string>
+    <string name="monitor_time">%1$s</string>
+    <string name="posture_score_label">Posture Score:</string>
+    <string name="posture_score">%1$d</string>
+    <string name="good_posture_detected_label">Good Posture Detected:</string>
+    <string name="good_posture_detected">%1$d</string>
+    <string name="bad_posture_detected_label">Bad Posture Detected: </string>
+    <string name="bad_posture_detected">%1$d </string>
+    <string name="forwardhead_label">- Forward Head:</string>
+    <string name="forwardhead_result">%1$d</string>
+    <string name="crossleg_label">- Cross Leg:</string>
+    <string name="crossleg_result">%1$d</string>
+    <string name="from">From:</string>
+    <string name="to">To:</string>
+    <string name="chart_time_monitoring">Time Monitoring (hours)</string>
+    <string name="chart_average_posture_score">Posture Score</string>
+    <string name="chart_bad_posture_detected">Bad Posture Detected</string>
+
+    <!-- Profile Page  -->
+    <string name="profile_edit">Edit Profile</string>
+    <string name="profile_change_password">Change Password</string>
+    <string name="profile_logout">Logout</string>
+    <string name="profile_name">Full Name</string>
+    <string name="profile_age">Age</string>
+    <string name="profile_gender">Gender</string>
+    <string name="profile_email">Email</string>
+    <string name="profile_setting_label">Profile Setting</string>
+    <string name="profile_no_document">No such document</string>
+    <string name="profile_error">Error: %1$s</string>
+    <string name="profile_user_not_logged_in">User not logged in</string>
+    <string name="language">Language</string>
+
+    <!-- SignUp Page -->
+    <string name="signup">Sign Up</string>
+    <string name="name">Name</string>
+    <string name="age">Age</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="signup_button">Sign Up</string>
+    <string name="login_link">Already have an account? <font color="#0000FF">Login here</font></string>
+    <string name="password_error">Password must contain at least one uppercase letter, one number, and one special character.</string>
+    <string name="password_mismatch">Passwords do not match</string>
+    <string name="signup_success">Sign up successful</string>
+    <string name="signup_failed">Sign up failed: %1$s</string>
+    <string name="error">Error: %1$s</string>
+
+    <!-- Login Page -->
+    <string name="app_logo">Posture Guard</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="signup_link">Don\'t have an account? <font color="#0000FF">Sign up here</font></string>
+    <string name="login_successful">Login successful</string>
+    <string name="login_failed">Login failed: %1$s</string>
+    <string name="enter_email_password">Please enter email and password</string>
+
+    <!-- Edit Profile Page -->
+    <string name="edit_profile_title">Edit Profile</string>
+    <string name="name_hint">Name</string>
+    <string name="age_hint">Age</string>
+    <string name="gender_hint">Gender</string>
+    <string name="email_hint">Email</string>
+    <string name="save_button">Save</string>
+    <string name="back_button">Back</string>
+
+    <!-- Change Password -->
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="change_password">Change Password</string>
+    <string name="passwords_do_not_match">Passwords do not match</string>
+    <string name="password_updated_successfully">Password updated successfully</string>
+    <string name="old_password_incorrect">Old password is incorrect</string>
+
+    <!-- Forgot Password -->
+    <string name="enter_email">Please enter your email</string>
+    <string name="reset_email_sent">Reset email sent</string>
+    <string name="send_reset_email">Send Reset Email</string>
+</resources>

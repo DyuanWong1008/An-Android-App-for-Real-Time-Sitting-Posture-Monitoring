@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "702238492453",
+    "project_id": "posture-guard-d46ea",
+    "storage_bucket": "posture-guard-d46ea.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:702238492453:android:5dd79696db0538a5583ccc",
+        "android_client_info": {
+          "package_name": "com.example.postureguard"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwG21vvC5Y96KETn5Z3jMi7s-R2avWw9c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
